@@ -69,12 +69,17 @@ def find_pic_all(target):
     return leftTopPos
 
 # 寻找目标区块并在其范围内随机点击
-def find_pic_touch(target):
+def find_pic_touch(*args):
+    if len(args)==2:
+        target,comment=args
+    else:
+        target=args[0]
+        comment="执行"
     leftTopPos = find_pic(target)
     if leftTopPos is None:
         print("【识图】识别 {0} 失败".format(target))
         return False
-    print("【识图】识别 {0} 成功，图块左上角坐标 {1}".format(target, leftTopPos))
+    print("【识图】识别 {0} 成功，图块左上角坐标 {1}，{2} 成功".format(target, leftTopPos,comment))
     img = cv2.imread(target)
     tlx, tly = leftTopPos
     h_src, w_src, tongdao = img.shape

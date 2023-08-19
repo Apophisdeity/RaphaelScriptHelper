@@ -8,7 +8,7 @@
 """
 import RaphaelScriptHelper
 import testDict
-RaphaelScriptHelper.deviceID = "emulator-5556"
+RaphaelScriptHelper.deviceID = "emulator-5554"
 RaphaelScriptHelper.deviceType = 1
 
 
