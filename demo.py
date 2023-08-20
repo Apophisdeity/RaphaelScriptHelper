@@ -60,11 +60,11 @@ def task_jingjichang():
     RaphaelScriptHelper.delay(2)
     RaphaelScriptHelper.find_pic_touch(testDict.huodong_jingjichang_2, "前往")
     RaphaelScriptHelper.delay(20)
-    RaphaelScriptHelper.find_pic_touch(testDict.huodong_jingjichang_3, "进入竞技场")
+    RaphaelScriptHelper.find_pic_touch(testDict.sq_huo_dong_danren_jingji_enter, "进入竞技场")
     RaphaelScriptHelper.delay(2)
-    RaphaelScriptHelper.find_pic_touch(testDict.huodong_jingjichang_4, "开始挑战")
+    RaphaelScriptHelper.find_pic_touch(testDict.sq_huo_dong_danren_jingji_start_1, "开始挑战")
     RaphaelScriptHelper.delay(2)
-    RaphaelScriptHelper.find_pic_touch(testDict.huodong_jingjichang_5, "开始挑战")
+    RaphaelScriptHelper.find_pic_touch(testDict.sq_huo_dong_danren_jingji_start_2, "开始挑战")
     RaphaelScriptHelper.delay(2)
     for _ in range(3):
         if _ == 0:

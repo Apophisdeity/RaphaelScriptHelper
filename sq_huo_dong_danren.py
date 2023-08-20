@@ -130,5 +130,4 @@ def weituo():
 
 
 if __name__ == '__main__':
-    import ADBHelper
-    print(ADBHelper.getDevicesList())
+    prefix_danren("委托")
