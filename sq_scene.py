@@ -112,7 +112,7 @@ def use_wupin():
     使用道具
     :return:
     """
-    return action_done(testDict.sq_use_wupin, comment="使用道具")
+    return action_done(testDict.sq_use_wupin, ts=5, comment="使用道具")
 
 
 def prefix_fight():
