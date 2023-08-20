@@ -157,6 +157,14 @@ def huodong_go():
     action_done(testDict.sq_huo_dong_go, ts=20, comment="前往")
 
 
+def start():
+    """
+    开始，棕色背景
+    :return:
+    """
+    action_done(testDict.sq_start, comment="开始")
+
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
@@ -217,6 +225,16 @@ def auto_guaji(cycle=1):
             count = 0
 
         count = count + 1
+
+
+def auto_fight():
+    """
+    若自动战斗没有开启，需要开启
+    :return:
+    """
+    if RaphaelScriptHelper.find_pic(testDict.sq_zhiling):
+        RaphaelScriptHelper.find_pic_touch(testDict.sq_fight_auto)
+        print("开启自动战斗")
 
 
 if __name__ == '__main__':

@@ -68,11 +68,11 @@ def task_jingjichang():
     RaphaelScriptHelper.delay(2)
     for _ in range(3):
         if _ == 0:
-            tar = testDict.huodong_jingjichang_select_1
+            tar = testDict.sq_huo_dong_danren_jingji_select_1
         elif _ == 1:
-            tar = testDict.huodong_jingjichang_select_2
+            tar = testDict.sq_huo_dong_danren_jingji_select_2
         else:
-            tar = testDict.huodong_jingjichang_select_3
+            tar = testDict.sq_huo_dong_danren_jingji_select_3
         RaphaelScriptHelper.touch(tar)
         print("选择对手，进入战斗")
         RaphaelScriptHelper.delay(3)
@@ -94,7 +94,7 @@ def task_shilianzhilu():
     RaphaelScriptHelper.delay(2)
     RaphaelScriptHelper.find_pic_touch(testDict.huodong_jingjichang_2, "前往")
     RaphaelScriptHelper.delay(20)
-    RaphaelScriptHelper.find_pic_touch(testDict.huodong_shilian_3, "开始试炼")
+    RaphaelScriptHelper.find_pic_touch(testDict.sq_huo_dong_danren_shilian_start, "开始试炼")
     RaphaelScriptHelper.delay(2)
     while True:
         pos = RaphaelScriptHelper.find_pic(testDict.huodong_shilian_5)
@@ -102,10 +102,10 @@ def task_shilianzhilu():
     RaphaelScriptHelper.touch((pos[0] + 200, pos[1]))
     print("选择关卡")
     RaphaelScriptHelper.delay(1)
-    RaphaelScriptHelper.find_pic_touch(testDict.huodong_shilian_6, "试炼")
+    RaphaelScriptHelper.find_pic_touch(testDict.sq_huo_dong_danren_shilian_queren, "试炼")
     RaphaelScriptHelper.random_delay()
     if RaphaelScriptHelper.find_pic(testDict.huodong_shilian_7):
-        RaphaelScriptHelper.find_pic_touch(testDict.huodong_shilian_8, "打不过")
+        RaphaelScriptHelper.find_pic_touch(testDict.sq_skip_x_buguize, "打不过")
         RaphaelScriptHelper.random_delay()
         RaphaelScriptHelper.touch(testDict.huodong_shilian_9)
         RaphaelScriptHelper.random_delay()
